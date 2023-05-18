@@ -1,0 +1,12 @@
+<form action='/todos/update/{{data.id}}' method="POST">
+	<div>
+		<label for="">Title:</label>
+		<input type="text" name="title" value='{{data.title}}'/>
+		<p>{{data.description}}</p>
+	</div>
+	<div>
+		<label for="">Description</label>
+		<input type="text" name="description" value='{{data.description}}'/>
+		<button type="submit">Save</button>
+	</div>
+</form>
