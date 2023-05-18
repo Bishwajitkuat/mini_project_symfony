@@ -1,0 +1,49 @@
+version: "3"
+services:
+  miniProjectDB:
+    #platform: linux/x86_64
+    image: mysql:8
+    ports:
+      - "3309:3306"
+    environment:
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+    command: --default-authentication-plugin=mysql_native_password
+    cap_add:
+      - SYS_NICE
+    restart: always
+    volumes:
+      # - miniProjectDB-data:/var/lib/mysql
+      - ./:/docker-entrypoint-initdb.d
+    networks:
+      dev:
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "9089:80"
+    links:
+      - miniProjectDB
+    environment:
+      PMA_HOST: miniProjectDB
+      PMA_PORT: 3306
+    restart: always
+    networks:
+      - dev
+
+  minipojectphp:
+    build: php
+    ports:
+      - "8009:80"
+    volumes:
+      - ./php/vhosts:/etc/apache2/sites-enabled
+      - ./:/var/www
+    restart: always
+    networks:
+      - dev
+
+networks:
+  dev:
+
+volumes:
+  miniProjectDB-data:
