@@ -1,6 +1,8 @@
 DROP DATABASE IF EXISTS miniProjectDB;
 CREATE DATABASE miniProjectDB;
 USE miniProjectDB;
+
+
 CREATE TABLE `doctrine_migration_versions` (
   `version` varchar(191) COLLATE utf8mb3_unicode_ci NOT NULL,
   `executed_at` datetime DEFAULT NULL,

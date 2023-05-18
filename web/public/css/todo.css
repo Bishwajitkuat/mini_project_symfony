@@ -1,0 +1,46 @@
+.todoContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.todoCard {
+  background-color: rgb(140, 203, 205);
+  padding: 1rem;
+}
+
+.actionBtn {
+  margin-right: 1rem;
+  font-size: large;
+}
+
+.addTodo {
+  text-align: center;
+  padding: 2rem;
+}
+
+.form {
+  width: 40%;
+  margin: 0 30%;
+}
+
+.form input {
+  width: 100%;
+  padding-top: 1rem;
+}
+.form label,
+input {
+  font-size: larger;
+  padding: 1rem;
+}
+.form label {
+  display: inline-block;
+  font-size: x-large;
+}
+
+.addBtn {
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
+  background-color: rgb(134, 190, 233);
+  font-size: large;
+}
