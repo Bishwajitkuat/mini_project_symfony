@@ -23,10 +23,8 @@
 				<div>
 					<h1>Title:
 						{{todo.title}}</h1>
-					<p>Description:
-						{{todo.description}}</p>
-					<p>Created At:
-						{{todo.created_at|date()}}</p>
+					<p>Description: {{todo.description}}</p>
+					<p>Created At: {{todo.created_at|date()}}</p>
 					<a href="{{path('getOne', {'id':todo.id})}}">Edit</a>
 					<a href="{{path('deleteTodo', {'id':todo.id})}}">Delete</a>
 				</div>
@@ -36,6 +34,7 @@
 					<label for="">Title</label>
 					<input type="text" placeholder="Task title" name="title"/>
 				</div>
+				
 				<div>
 					<label for="">Description</label>
 					<input type="text" name="description" placeholder="Task description"/>
