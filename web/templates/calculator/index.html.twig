@@ -6,13 +6,13 @@
 	<h1>Calculator</h1>
 
 	<div class='box'>
-	{% if 'result' is defined %}
-	<p>Result:</p>
+	{% if result is defined %}
+	<p>Result: </p>
 	<p>{{result}}</p>
 	{% endif %}
 	</div>
 	<div>
-	<form method="post" >
+	<form method="post" action>
 		<div><input type="text" name="firstNumber"/></div>
 		<div><select name="operation" id="">
 			<option value="+">+</option>

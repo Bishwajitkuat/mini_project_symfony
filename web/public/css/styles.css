@@ -6,9 +6,11 @@ body {
   justify-content: center;
 }
 .frontcontainerBody {
+
   min-width: 100vh;
 }
 .frontcontainer {
+    margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -30,6 +32,7 @@ body {
 
 .box {
   background: white;
+  color: black;
   height: 8rem;
   border-radius: 1rem;
   padding: 1rem;
@@ -73,3 +76,4 @@ button {
 .calculator select {
   margin-left: 6rem;
 }
+
