@@ -13,8 +13,8 @@ class CalculatorController extends AbstractController
     public function index(Request $request)
 
     {
-         $firstNumber = $request->request->get('firstNumber');
-         $secondNumber =  $request->request->get('secondNumber');
+         $firstNumber =intval($request->request->get('firstNumber'));
+         $secondNumber =intval($request->request->get('secondNumber'));
          $operation=  $request->request->get('operation');
 
          $result = null;
