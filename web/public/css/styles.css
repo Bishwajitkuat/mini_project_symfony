@@ -1,72 +1,75 @@
-body{
-    background: url('https://wallpaperaccess.com/full/1251284.jpg') no-repeat center center/cover; 
-  }
-.frontcontainer{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem; 
-    
+body {
+  background-image: url("https://wallpaperaccess.com/full/1251284.jpg");
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.card{         
-    border-radius: 2rem;
-    height: 35rem;
-    width: 20rem;
-    background-color: rgb(140, 203, 205);
-    padding: 0.5rem;
-    margin-left: 5rem;
+.frontcontainerBody {
+  min-width: 100vh;
+}
+.frontcontainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.card {
+  border-radius: 2rem;
+  height: 35rem;
+  width: 20rem;
+  background-color: rgb(140, 203, 205);
+  padding: 0.5rem;
+  margin-left: 5rem;
 }
 
-.cardImage{
-    border-radius: 2rem 2rem 0 0 ;
-    height:20rem;
-    width:20rem;  
+.cardImage {
+  border-radius: 2rem 2rem 0 0;
+  height: 20rem;
+  width: 20rem;
 }
 
-.box{
-    background: white;
-    height:8rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    width:15rem; 
-    display: flex;
-    flex-direction: column;
-   
+.box {
+  background: white;
+  height: 8rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
 }
-button{
+button {
   padding: 1rem 2rem;
   margin-top: 0.5rem;
   background-color: rgb(134, 190, 233);
   font-size: large;
   border-radius: 5px;
 }
-
-.calculator{
-    border-radius: 2rem;
-    height: 30rem;
-    width: 20rem;
-    background-color: rgb(140, 203, 205);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   justify-content: space-around;
+.calculatorContainer {
+  min-height: 100vh;
+}
+.calculator {
+  margin-top: 5rem;
+  border-radius: 2rem;
+  height: 30rem;
+  width: 20rem;
+  background-color: rgb(140, 203, 205);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-
-.calculator button{
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    background-color: rgb(134, 190, 233);
-   
+.calculator button {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: rgb(134, 190, 233);
 }
 
-.calculator div{
-    margin: 0.5rem;
+.calculator div {
+  margin: 0.5rem;
 }
 
-.calculator select{
-    margin-left: 6rem;
+.calculator select {
+  margin-left: 6rem;
 }
-
-
-    
