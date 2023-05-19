@@ -2,9 +2,12 @@
 
 namespace App\Controller;
 
+use App\Service\ChatGPTService;
+use App\Service\ServiceFormula1;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 class WebController extends AbstractController
 {
@@ -15,4 +18,6 @@ class WebController extends AbstractController
             'controller_name' => 'WebController',
         ]);
     }
+
+   
 }

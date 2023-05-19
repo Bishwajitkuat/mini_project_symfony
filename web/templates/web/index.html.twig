@@ -1,39 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello WebController!{% endblock %}
+{% block title %}Symfony Mini Project{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-<div class="card">
-  <img src="image.jpg" alt="Card Image">
-  <div class="card-content">
-    <h3>Title</h3>
-    <p>Description</p>
-    <a href="#" class="button">Read More</a>
-  </div>
-</div>
-<div class="card">
-  <img src="image.jpg" alt="Card Image">
-  <div class="card-content">
-    <h3>Title</h3>
-    <p>Description</p>
-    <a href="#" class="button">Read More</a>
-  </div>
-</div>
-<div class="card">
-  <img src="image.jpg" alt="Card Image">
-  <div class="card-content">
-    <h3>Title</h3>
-    <p>Description</p>
-    <a href="#" class="button">Read More</a>
-  </div>
-</div>
+<div class="frontcontainer">
 
-    <a href="{{path('app_todo')}}">TODO</a>
+    <div class='card'>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybIDKXijbZCv79hv43uazgNWvwgrhzsam6A&usqp=CAU" alt="Card Image" class="cardImage">
+        <h3>Calculator-App</h3>
+        <p>This is one of the many practices we did in our class which i have included here to navigate this page </p>
+        <button><a href="{{('app_calculator')}}" >Calculator</a></button><a href="{{('app_calculator')}}" ></a>
+    
+    </div>
+    <div class='card'>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7gpfDTP1whBUGX_LV3u1MF2UnQC2U9AuOsA&usqp=CAU" alt="Card Image" class='cardImage'>
+        <h3>TODO-App</h3>
+        <p>This is our second Group task and it is made with symfony to make a list of todos .</p>
+        <button><a href="{{path('app_todo')}}">TODO</a></button>
+    </div>
 </div>
 {% endblock %}
