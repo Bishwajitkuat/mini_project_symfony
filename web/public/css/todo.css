@@ -1,3 +1,6 @@
+body{
+  background: url('https://wallpaperaccess.com/full/1251284.jpg') no-repeat center center/cover; 
+}
 .todoContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -12,6 +15,7 @@
 .actionBtn {
   margin-right: 1rem;
   font-size: large;
+  border-radius: 5px;
 }
 
 .addTodo {
@@ -43,4 +47,5 @@ input {
   margin-top: 0.5rem;
   background-color: rgb(134, 190, 233);
   font-size: large;
+  border-radius: 5px;
 }

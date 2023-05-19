@@ -10,16 +10,17 @@
 	<p>{{result}}</p>
 	{% endif %}
 	</div>
-
+	<div>
 	<form method="post" >
-		<input type="text" name="firstNumber"/>
-		<select name="operation" id="">
+		<div><input type="text" name="firstNumber"/></div>
+		<div><select name="operation" id="">
 			<option value="+">+</option>
 			<option value="-">-</option>
 			<option value="*">x</option>
 			<option value="/">/</option>
-		</select>
-		<input type="text" name="secondNumber"/>
+		</select></div>
+		<div><input type="text" name="secondNumber"/></div>
+		</div>
 		<div>
 		<button type="submit">Calculate</button>
 		<button><a href="{{path('app_web')}}">Back</a></button>
