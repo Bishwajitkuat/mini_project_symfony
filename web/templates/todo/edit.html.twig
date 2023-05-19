@@ -1,12 +1,49 @@
-<form action='/todos/update/{{data.id}}' method="POST">
-	<div>
-		<label for="">Title:</label>
-		<input type="text" name="title" value='{{data.title}}'/>
-		<p>{{data.description}}</p>
-	</div>
-	<div>
-		<label for="">Description</label>
-		<input type="text" name="description" value='{{data.description}}'/>
-		<button type="submit">Save</button>
-	</div>
-</form>
+{% apply inline_css %}
+<html>
+	<head>
+		<style>
+			* {
+				background-color: goldenRod;
+			}
+			form {
+				width: 40%;
+				margin: 0 30%;
+				color: black;
+			}
+			input {
+				width: 100%;
+				padding: 1rem;
+				font-size: larger;
+			}
+			label {
+				display: inline-block;
+				font-size: x-large;
+				font-size: larger;
+				padding: 1rem;
+			}
+			button {
+				padding: 1rem 2rem;
+				margin-top: 0.5rem;
+				background-color: rgb(134, 190, 233);
+				font-size: large;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<form class='editForm' action='/todos/update/{{data.id}}' method="POST">
+				<div>
+					<label for="">Title:</label>
+					<input type="text" name="title" value='{{data.title}}'/>
+				</div>
+				<div>
+					<label for="">Description</label>
+					<input type="text" name="description" value='{{data.description}}'/>
+					<button type="submit">Save</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+
+{% endapply %}
